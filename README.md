@@ -33,17 +33,15 @@ Include the flex-grid package in to your code, via.
 @import "@fylgja/flex-grid/flex-grid";
 ```
 
-This grid does not work like Bootstrap with a 12 column layout.
-Or some other grid that uses 24 columns.
+This grid does not work with a 12 columns or 24 columns layout,
+like other frameworks.
 This only makes your CSS bigger with unused columns.
-Which is more unused CSS.
 
-The power of the flex-grid is in it's smallness.
-For each Media Query there are amount of columns set.
+The power of the flex-grid is that for
+each media query there are specific amount of columns set.
+
 So for example on mobile you might only need 2 columns.
 Then you can set the flex-grid to only load 2 columns.
-
-So to create something like this.
 
 ```html
 <div class="flex-grid">
@@ -82,7 +80,7 @@ Works great with cards.
 ## Config
 
 By default the config is set for the smallest use case.
-So many configs are disabled or load only what is needed.
+So many configs are disabled to load only what is needed.
 
 ### Booleans
 
@@ -144,12 +142,11 @@ So good stuff to come 😉
 
 <details><summary>Why should I still use a flex-grid instead of a CSS Grid</summary>
 
-While it is not an valid answer to say browser support.
-
-Since you can use CSS grid in IE11, via Explicit grid (fixed size).
+It's not an valid answer to say browser support,
+since you can use CSS grid in IE11, via Explicit grid (fixed size).
 
 Flex-grid makes sense for flexable grids.
-Where you don't know the layout, before hand.
+Where you don't know the layout before hand.
 
 </details>
 
@@ -160,7 +157,7 @@ The Fylgja flex-grid was part of our private code base for a long time.
 _Even had a LESS version._
 
 With our near completion of Fylgja we also wanted to share this piece of history.
-That is is still usable for many cases even in 2019.
+That is is still very usable for many cases even in 2019.
 
 </details>
 
