@@ -1,0 +1,60 @@
+// Fylgja (getfylgja.com)
+// Licensed under MIT Open Source
+
+/// @param {String} $mq - breakpoint
+/// @param {Array} $map - map to check breakpoints from
+/// @return {Content} - styles wrapped in a media query
+@mixin flex-grid-mq($mq) {
+    $mq-value: map-get($breakpoints, $mq);
+    @if $mq-value != 0 {
+        @media (min-width: $mq-value) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+/// Creates grid gaps via the margin/padding trick
+/// @param {Number} $size - the gap size
+/// @return {Content} - gap styles
+@mixin flex-grid-gap($size) {
+    $x: if(length($size) == 2, nth($size, 2), nth($size, 1));
+    $y: nth($size, 1);
+    margin: if($x == $y, $y, ($y / -2) ($x / -2));
+    > .cell {
+        padding: if($x == $y, $y, ($y / -2) ($x / -2));
+    }
+}
+
+/// Creates grid cells
+/// @param {String} $mq - the cell media query
+/// @param {Number} $i - How much iterations
+/// @return {Content} - cell styles
+@mixin flex-grid-cell($mq, $i) {
+    @for $size from 1 through $i {
+        $width: if($size == 1, 100%, calc(100% / #{$size}));
+        > .cell.#{$mq}-#{$size} {
+            flex: 0 0 auto;
+            width: $width;
+        }
+    }
+}
+
+/// Creates grid cells offsets
+/// @param {String} $mq - the cell media query
+/// @param {Number} $i - How much iterations
+/// @return {Content} - cell offset styles
+@mixin flex-grid-offset($mq, $i) {
+    @for $size from 1 through $i {
+        @if $enable-flex-offset and $size == 1 {
+            > .offset-#{$mq}-none {
+                margin-left: 0;
+            }
+        } @else if $enable-flex-offset and $size > 1 {
+            > .offset-#{$mq}-#{$size} {
+                margin-left: calc(100% / #{$size});
+            }
+        }
+    }
+}

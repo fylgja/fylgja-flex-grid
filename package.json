@@ -1,0 +1,18 @@
+{
+  "name": "@fylgja/flex-grid",
+  "version": "0.0.0",
+  "description": "Create a fully fledged css flex-grid via the @fylgja/flex-grid scss module",
+  "homepage": "http://getfylgja.com/",
+  "author": "Fylgja",
+  "license": "MIT",
+  "keywords": [
+    "fylgja",
+    "grid",
+    "flexbox",
+    "scss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
+  }
+}
