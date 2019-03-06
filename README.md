@@ -5,6 +5,20 @@ And only set the columns you need.
 
 Making it even smaller than other flex grids.
 
+<details><summary>Table of Contents</summary>
+
+- [Installation](#installation)
+- [How to use](#how-to-use)
+  - [Classes](#classes)
+- [Config](#config)
+  - [Booleans](#booleans)
+  - [Setters](#setters)
+  - [Breakpoints](#breakpoints)
+- [Helper (mixins)](#helper-mixins)
+- [FAQ](#faq)
+
+</details>
+
 ## Installation
 
 ```bash
@@ -33,8 +47,8 @@ So to create something like this.
 
 ```html
 <div class="flex-grid">
-    <div class="cell sm-2">item 1</div>
-    <div class="cell sm-2">item 2</div>
+    <div class="cell sm-2"></div>
+    <div class="cell sm-2"></div>
 </div>
 ```
 
@@ -83,7 +97,7 @@ So many configs are disabled or load only what is needed.
 | Var              | Default                      | Description                    |
 | ---------------- | ---------------------------- | ------------------------------ |
 | $flex-grid-gaps  | ()                           | Additional gaps to load        |
-| $flex-grid-cells | xs 2, sm 3, md 4, lg 5, xl 5 | Amount of cells to load per MQ |
+| $flex-grid-cells | xs 2, sm 3, md 3, lg 4, xl 5 | Amount of cells to load per MQ |
 | $gap-size        | 1rem                         | The default gap size           |
 
 ### Breakpoints
