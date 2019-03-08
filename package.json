@@ -13,6 +13,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/getfylgja/stylelint-config-fylgja.git"
+    "url": "https://github.com/getfylgja/fylgja-flex-grid"
   }
 }
