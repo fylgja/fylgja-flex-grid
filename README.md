@@ -1,5 +1,7 @@
 # Fylgja - Flex Grid
 
+[![NPM version](https://img.shields.io/npm/v/@fylgja/flex-grid.svg)](https://www.npmjs.org/package/@fylgja/flex-grid)
+
 Create a complete grid using flexbox.
 And only set the columns you need.
 
