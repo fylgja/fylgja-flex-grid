@@ -1,3 +1,8 @@
+# Changelog
+
+## 1.0.3 - 14-04-19
+* ADD: title to changelog
+
 ## 1.0.2 - 08-03-19
 * FIX: missing min in gap wrapper
 
