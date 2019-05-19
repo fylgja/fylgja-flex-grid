@@ -2,6 +2,7 @@
 
 ## 1.0.4 - 19-05-19
 * IMP: Git URL Changed
+* ADD: bug url in pkg
 
 ## 1.0.3 - 14-04-19
 * ADD: title to changelog
