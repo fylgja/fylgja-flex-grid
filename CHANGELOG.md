@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.1 - 20-06-19
+* FIX: remove min on gap padding
+
 ## 1.1.0 - 20-06-19
 * IMP: gap behaviour to prevent weird html flow
   * While this was not breaking it did make the html highlighting look weird,
