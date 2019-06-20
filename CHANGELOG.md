@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0 - 20-06-19
+* IMP: gap behaviour to prevent weird html flow
+  * While this was not breaking it did make the html highlighting look weird,
+    so it is better to not reset the gap on y axis
+
 ## 1.0.4 - 19-05-19
 * IMP: Git URL Changed
 * ADD: bug url in pkg

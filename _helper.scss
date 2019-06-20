@@ -21,9 +21,12 @@
 @mixin flex-grid-gap($size) {
     $x: if(length($size) == 2, nth($size, 2), nth($size, 1));
     $y: nth($size, 1);
-    margin: if($x == $y, ($y / -2), ($y / -2) ($x / -2));
+    margin-right: ($x / -2);
+    margin-left: ($x / -2);
     > .cell {
-        padding: if($x == $y, ($y / 2), ($y / 2) ($x / 2));
+        margin-bottom: $y;
+        padding-right: ($x / -2);
+        padding-left: ($x / -2);
     }
 }
 
