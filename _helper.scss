@@ -17,13 +17,15 @@
 
 /// Creates grid gaps via the margin/padding trick
 /// @param {Number} $size - the gap size
-/// @return {Content} - gap styles
-@mixin flex-grid-gap($size) {
+/// @param {String} $class - class to use
+/// @return {*} - gap styles
+@mixin flex-grid-gap($size, $class: "cell") {
     $x: if(length($size) == 2, nth($size, 2), nth($size, 1));
     $y: nth($size, 1);
     margin-right: ($x / -2);
     margin-left: ($x / -2);
-    > .cell {
+
+    > .#{$class} {
         margin-bottom: $y;
         padding-right: ($x / 2);
         padding-left: ($x / 2);

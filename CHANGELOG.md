@@ -2,6 +2,7 @@
 
 ## 1.1.2 - (2019-07-26)
 * IMP: changelog date format to ISO standard
+* ADD: class option to gap builder
 
 ## 1.1.1 - (2019-06-20)
 * FIX: remove min on gap padding

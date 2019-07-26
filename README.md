@@ -112,12 +112,12 @@ See the upcoming Fylgja helperUtil module for more information.
 The flex grid is build using a few helper mixins.
 You can use the helpers if you need a little more than the config can offer you.
 
-| mixin            | options | Description                   |
-| ---------------- | ------- | ----------------------------- |
-| flex-grid-mq     | $mq     | Create a mq with if statement |
-| flex-grid-gap    | $size   | Create a grid gap             |
-| flex-grid-cell   | $mq, $i | Create a cell size            |
-| flex-grid-offset | $mq, $i | Create a cell offset size     |
+| mixin             | options       | Description                   |
+| ----------------- | ------------- | ----------------------------- |
+| flex-grid-mq      | $mq           | Create a mq with if statement |
+| flex-grid-gap     | $size, $class | Create a grid gap             |
+| flex-grid-cells   | $mq, $i       | Create a cell sizes           |
+| flex-grid-offsets | $mq, $i       | Create a cell offset sizes    |
 
 ## FAQ
 
