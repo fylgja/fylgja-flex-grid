@@ -2,7 +2,7 @@
   "name": "@fylgja/flex-grid",
   "version": "1.1.1",
   "description": "Create a fully fledged css flex-grid via the @fylgja/flex-grid scss module",
-  "homepage": "http://getfylgja.com/",
+  "homepage": "https://getfylgja.com/",
   "author": "Fylgja",
   "license": "MIT",
   "keywords": [
