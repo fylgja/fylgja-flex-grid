@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.2 - (2019-07-26)
+## 1.2.0 - (2019-07-26)
 * IMP: changelog date format to ISO standard
 * IMP: formating and make it more clear what the does builder
   * flex-grid-cell and flex-grid-offset are renamed
