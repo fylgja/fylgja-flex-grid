@@ -9,15 +9,15 @@ Making it even smaller than other flex grids.
 
 <details><summary>Table of Contents</summary>
 
-- [Installation](#installation)
-- [How to use](#how-to-use)
-  - [Classes](#classes)
-- [Config](#config)
-  - [Booleans](#booleans)
-  - [Setters](#setters)
-  - [Breakpoints](#breakpoints)
-- [Helper (mixins)](#helper-mixins)
-- [FAQ](#faq)
+- [Installation](#Installation)
+- [How to use](#How-to-use)
+  - [Classes](#Classes)
+- [Config](#Config)
+  - [Booleans](#Booleans)
+  - [Setters](#Setters)
+  - [Breakpoints](#Breakpoints)
+- [Helper (mixins)](#Helper-mixins)
+- [FAQ](#FAQ)
 
 </details>
 
@@ -29,7 +29,7 @@ npm install @fylgja/flex-grid --save-dev
 
 ## How to use
 
-Include the flex-grid package in to your code, via.
+Include the flex-grid package in to your code via;
 
 ```scss
 @import "@fylgja/flex-grid/flex-grid";
@@ -94,18 +94,18 @@ So many configs are disabled to load only what is needed.
 
 ### Setters
 
-| Var              | Default                      | Description                    |
-| ---------------- | ---------------------------- | ------------------------------ |
-| $flex-grid-gaps  | ()                           | Additional gaps to load        |
-| $flex-grid-cells | xs 2, sm 3, md 3, lg 4, xl 5 | Amount of cells to load per MQ |
-| $gap-size        | 1rem                         | The default gap size           |
+| Var              | Default                      | Description             |
+| ---------------- | ---------------------------- | ----------------------- |
+| $flex-grid-gaps  | ()                           | Additional gaps         |
+| $flex-grid-cells | xs 2, sm 3, md 3, lg 4, xl 5 | Amount of cells, per MQ |
+| $gap-size        | 1rem                         | The default gap size    |
 
 ### Breakpoints
 
 All breakpoints are set via the SCSS map `$breakpoints`.
-Each point is based on the bootstrap naming.
+Each point is based on the Bootstrap naming.
 
-See the upcoming Fylgja helperUtil module for more information.
+See the upcoming `@fylgja/core` module for more information.
 
 ## Helper (mixins)
 
@@ -120,6 +120,25 @@ You can use the helpers if you need a little more than the config can offer you.
 | flex-grid-offsets | $mq, $i       | Create a cell offset sizes    |
 
 ## FAQ
+
+<details><summary>How to create odd cell size (e.g. 2/3)</summary>
+
+The flex-grid is by default is build with an equal grid size in mind.
+Since this the most common use case for an flex-grid.
+
+Layout like sizes like 2/3 or even 3/4 are not by default added.
+
+You must create these sizes your self.
+You can do it like this.
+
+```scss
+.flex-grid > .cell.xs-3-4 {
+    flex: 0 0 auto;
+    width: calc((100% / 4) * 3);
+}
+```
+
+</details>
 
 <details><summary>What is mq?</summary>
 

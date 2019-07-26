@@ -2,6 +2,10 @@
 
 ## 1.1.2 - (2019-07-26)
 * IMP: changelog date format to ISO standard
+* IMP: formating and make it more clear what the does builder
+  * flex-grid-cell and flex-grid-offset are renamed
+    to flex-grid-cells and flex-grid-offsets
+    to make it more clear that both mixins creates multiple sizes.
 * ADD: class option to gap builder
 
 ## 1.1.1 - (2019-06-20)

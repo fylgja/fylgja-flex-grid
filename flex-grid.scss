@@ -3,7 +3,6 @@
 
 @import "helper";
 
-// NOTE: Always set with min-width value
 $breakpoints: (
     xs: 0,
     sm: 480px,
@@ -31,47 +30,57 @@ $enable-flex-offset: false !default;
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
+
     @if $enable-flex-gap {
         @include flex-grid-gap($gap-size);
     }
+
     &.-gap {
         @if not $enable-flex-gap {
             @include flex-grid-gap($gap-size);
         }
+
         @each $name, $gap in $flex-grid-gaps {
             &-#{$name} {
                 @include flex-grid-gap($gap);
             }
         }
     }
+
     > .cell {
         flex: 0 0 auto;
         width: 100%;
     }
+
     @if $enable-flex-fill {
         &.-fill > .cell {
             display: inline-flex;
             flex-direction: column;
+
             > * {
                 flex: 1 1 auto;
             }
         }
     }
+
     @each $mq, $i in $flex-grid-cells {
         @include flex-grid-mq($mq) {
-            @include flex-grid-cell($mq, $i);
+            @include flex-grid-cells($mq, $i);
+
             // autofilling cell style
             > .cell.#{$mq}-grow {
                 flex: 1 1 auto;
                 width: auto;
             }
+
             // Content fitting cell style
             > .cell.#{$mq}-shrink {
                 flex: 0 0 auto;
                 width: auto;
             }
+
             @if $enable-flex-offset {
-                @include flex-grid-offset($mq, $i);
+                @include flex-grid-offsets($mq, $i);
             }
         }
     }
