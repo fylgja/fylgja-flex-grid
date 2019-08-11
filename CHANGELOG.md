@@ -3,6 +3,7 @@
 ## 2.0.0 - (2019-08-11)
 * ADD: importing via CSS
   * usefull for Vue or React based projects
+* ADD: importing via [index.scss](https://sass-lang.com/documentation/at-rules/import#index-files)
 
 ## 1.2.0 - (2019-07-26)
 * IMP: changelog date format to ISO standard
