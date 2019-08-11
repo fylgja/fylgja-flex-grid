@@ -4,6 +4,7 @@
 * ADD: importing via CSS
   * usefull for Vue or React based projects
 * ADD: importing via [index.scss](https://sass-lang.com/documentation/at-rules/import#index-files)
+* IMP: update doc & pkg for v2
 
 ## 1.2.0 - (2019-07-26)
 * IMP: changelog date format to ISO standard

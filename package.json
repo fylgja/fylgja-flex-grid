@@ -1,21 +1,26 @@
 {
   "name": "@fylgja/flex-grid",
-  "version": "1.2.0",
-  "description": "Create a fully fledged css flex-grid via the @fylgja/flex-grid scss module",
+  "version": "2.0.0",
+  "description": "Create a fully fledged css flex-grid",
   "homepage": "https://getfylgja.com/",
   "author": "Fylgja",
   "license": "MIT",
-  "keywords": [
-    "fylgja",
-    "grid",
-    "flexbox",
-    "scss"
-  ],
+  "style": "flex-grid.css",
+  "sass": "_index.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/fylgja/fylgja-flex-grid"
   },
   "bugs": {
     "url": "https://github.com/fylgja/fylgja-flex-grid/issues"
+  },
+  "keywords": [
+    "fylgja",
+    "grid",
+    "flexbox",
+    "scss"
+  ],
+  "scripts": {
+    "build": "sass flex-grid.scss flex-grid.css --no-source-map -s compressed"
   }
 }

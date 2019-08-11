@@ -9,15 +9,15 @@ Making it even smaller than other flex grids.
 
 <details><summary>Table of Contents</summary>
 
-- [Installation](#Installation)
-- [How to use](#How-to-use)
-  - [Classes](#Classes)
-- [Config](#Config)
-  - [Booleans](#Booleans)
-  - [Setters](#Setters)
-  - [Breakpoints](#Breakpoints)
-- [Helper (mixins)](#Helper-mixins)
-- [FAQ](#FAQ)
+- [Installation](#installation)
+- [How to use](#how-to-use)
+  - [Classes](#classes)
+- [Config](#config)
+  - [Booleans](#booleans)
+  - [Setters](#setters)
+  - [Breakpoints](#breakpoints)
+- [Helper (mixins)](#helper-mixins)
+- [FAQ](#faq)
 
 </details>
 
@@ -32,11 +32,16 @@ npm install @fylgja/flex-grid --save-dev
 Include the flex-grid package in to your code via;
 
 ```scss
-@import "@fylgja/flex-grid/flex-grid";
+// scss (DartSass) (LibSass >= 3.6.0)
+@import "@fylgja/flex-grid";
+
+// css
+@import "@fylgja/flex-grid/flex-grid.css";
 ```
 
 This grid does not work with a 12 columns or 24 columns layout,
-like other frameworks.
+unlike other frameworks.
+
 This only makes your CSS bigger with unused columns.
 
 The power of the flex-grid is that for
@@ -131,7 +136,7 @@ Layout like sizes like 2/3 or even 3/4 are not by default added.
 You must create these sizes your self.
 You can do it like this.
 
-```scss
+```css
 .flex-grid > .cell.xs-3-4 {
     flex: 0 0 auto;
     width: calc((100% / 4) * 3);
