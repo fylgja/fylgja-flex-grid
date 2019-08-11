@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0 - (2019-08-11)
+* ADD: importing via CSS
+  * usefull for Vue or React based projects
+
 ## 1.2.0 - (2019-07-26)
 * IMP: changelog date format to ISO standard
 * IMP: formating and make it more clear what the does builder
