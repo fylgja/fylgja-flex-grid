@@ -34,7 +34,8 @@ Include the flex-grid package in to your code via;
 ```scss
 // scss (DartSass) (LibSass >= 3.6.0)
 @import "@fylgja/flex-grid";
-
+// scss (older option)
+@import "@fylgja/flex-grid/index";
 // css
 @import "@fylgja/flex-grid/flex-grid.css";
 ```
