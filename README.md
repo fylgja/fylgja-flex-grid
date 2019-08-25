@@ -24,19 +24,23 @@ Making it even smaller than other flex grids.
 ## Installation
 
 ```bash
-npm install @fylgja/flex-grid --save-dev
+npm install @fylgja/flex-grid
 ```
 
 ## How to use
 
 Include the flex-grid package in to your code via;
 
-```scss
-// scss (DartSass) (LibSass >= 3.6.0)
-@import "@fylgja/flex-grid";
-// scss (older option)
-@import "@fylgja/flex-grid/index";
-// css
+Include the utilkit package in to your code via;
+
+```scss 
+@import "@fylgja/flex-grid"; // (DartSass, LibSass 3.6)
+@import "@fylgja/flex-grid/index"; // old way
+```
+
+Or just as CSS, via;
+
+```css
 @import "@fylgja/flex-grid/flex-grid.css";
 ```
 

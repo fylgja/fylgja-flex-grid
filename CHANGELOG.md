@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.1 - (2019-08-30)
+* IMP: update doc
+
 ## 2.0.0 - (2019-08-11)
 * ADD: importing via CSS
   * usefull for Vue or React based projects
