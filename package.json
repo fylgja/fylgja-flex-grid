@@ -11,14 +11,11 @@
     "type": "git",
     "url": "https://github.com/fylgja/fylgja-flex-grid"
   },
-  "bugs": {
-    "url": "https://github.com/fylgja/fylgja-flex-grid/issues"
-  },
+  "bugs": "https://github.com/fylgja/fylgja-flex-grid/issues",
   "keywords": [
     "fylgja",
-    "grid",
-    "flexbox",
-    "scss"
+    "fylgja component",
+    "flex-grid"
   ],
   "scripts": {
     "build": "sass flex-grid.scss flex-grid.css --no-source-map -s compressed"
