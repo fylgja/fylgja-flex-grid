@@ -25,6 +25,7 @@ $flex-grid-cells: (
 $enable-flex-gap: true !default;
 $enable-flex-fill: false !default;
 $enable-flex-offset: false !default;
+$enable-flex-chunks: true !default;
 
 .flex-grid {
     display: flex;
@@ -65,7 +66,7 @@ $enable-flex-offset: false !default;
 
     @each $mq, $i in $flex-grid-cells {
         @include flex-grid-mq($mq) {
-            @include flex-grid-cells($mq, $i);
+            @include flex-grid-cells($mq, $i, $enable-flex-chunks);
 
             // autofilling cell style
             > .cell.#{$mq}-grow {
@@ -80,7 +81,7 @@ $enable-flex-offset: false !default;
             }
 
             @if $enable-flex-offset {
-                @include flex-grid-offsets($mq, $i);
+                @include flex-grid-offsets($mq, $i, $enable-flex-chunks);
             }
         }
     }

@@ -35,12 +35,22 @@
 /// Creates grid cells
 /// @param {Number} $i - How much iterations
 /// @param {String} $mq - the cell media query
+/// @param {Boolean} $chunks - If to render chunked sizes
 /// @return {*} - cell styles
-@mixin flex-grid-cells($mq, $size) {
+@mixin flex-grid-cells($mq, $size, $chunks: true) {
     @for $i from 1 through $size {
         > .cell.#{$mq}-#{$i} {
             flex: 0 0 auto;
             width: if($i == 1, 100%, calc(100% / #{$i}));
+        }
+
+        @if $chunks and ($i > 2) {
+            @for $fi from 2 through ($i - 1) {
+                > .cell.#{$mq}-#{$i}-#{$fi} {
+                    flex: 0 0 auto;
+                    width: calc((100% / #{$i}) * #{$fi});
+                }
+            }
         }
     }
 }
@@ -48,12 +58,21 @@
 /// Creates grid cells offsets
 /// @param {Number} $i - How much iterations
 /// @param {String} $mq - the cell media query
+/// @param {Boolean} $chunks - If to render chunked sizes
 /// @return {*} - cell offset styles
-@mixin flex-grid-offsets($mq, $size) {
+@mixin flex-grid-offsets($mq, $size, $chunks: true) {
     @for $i from 1 through $size {
         $name: if($i == 1, "none", $i);
         > .offset-#{$mq}-#{$name} {
             margin-left: if($i == 1, 0, calc(100% / #{$i}));
+        }
+
+        @if $chunks and ($i > 2) {
+            @for $fi from 2 through ($i - 1) {
+                > .offset-#{$mq}-#{$i}-#{$fi} {
+                    margin-left: calc((100% / #{$i}) * #{$fi});
+                }
+            }
         }
     }
 }
