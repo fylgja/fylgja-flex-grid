@@ -131,25 +131,6 @@ You can use the helpers if you need a little more than the config can offer you.
 
 ## FAQ
 
-<details><summary>How to create odd cell size (e.g. 2/3)</summary>
-
-The flex-grid is by default is build with an equal grid size in mind.
-Since this the most common use case for an flex-grid.
-
-Layout like sizes like 2/3 or even 3/4 are not by default added.
-
-You must create these sizes your self.
-You can do it like this.
-
-```css
-.flex-grid > .cell.xs-3-4 {
-    flex: 0 0 auto;
-    width: calc((100% / 4) * 3);
-}
-```
-
-</details>
-
 <details><summary>What is mq?</summary>
 
 As stated under the section [How to use, classes](#Classes)
