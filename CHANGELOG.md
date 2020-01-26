@@ -3,6 +3,8 @@
 ## 2.1.0 - (2020-01-26)
 * IMP:
   * config & doc files
+  * update license year
+
 ## 2.0.2 - (2019-08-31)
 * FIX: allow imports for older sass versions,
   will dropped in the future (https://github.com/sass/node-sass/issues/2111
