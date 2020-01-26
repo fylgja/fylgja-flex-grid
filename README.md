@@ -27,30 +27,22 @@ Making it even smaller than other flex grids.
 npm install @fylgja/flex-grid
 ```
 
-## How to use
-
-Include the flex-grid package in to your code via;
-
-Include the utilkit package in to your code via;
+And include the component in to your code via;
 
 ```scss 
-@import "@fylgja/flex-grid"; // (DartSass, LibSass 3.6)
-@import "@fylgja/flex-grid/index"; // old way
+@import "@fylgja/flex-grid"; // DartSass or LibSass >= 3.6
+@import "@fylgja/flex-grid/index"; // LibSass <= 3.5
+@import "@fylgja/flex-grid/flex-grid.css"; // CSS or PostCSS
 ```
 
-Or just as CSS, via;
-
-```css
-@import "@fylgja/flex-grid/flex-grid.css";
-```
+## How to use
 
 This grid does not work with a 12 columns or 24 columns layout,
 unlike other frameworks.
-
 This only makes your CSS bigger with unused columns.
 
-The power of the flex-grid is that for
-each media query there are specific amount of columns set.
+The power of the flex-grid is
+that for each media query there are specific amount of columns set.
 
 So for example on mobile you might only need 2 columns.
 Then you can set the flex-grid to only load 2 columns.
@@ -76,18 +68,29 @@ _$mq = @media, e.g. `.sm-2` or `.lg-2`_
 
 `.cell`: Sets the grid item (required)
 
-*  `.${mq}-${1}`: the grid item size
-*  `.${mq}-grow`: the grid item size that grows to fit the available space
-*  `.${mq}-shrink`: the grid item size that shrinks to fit the content size
+* `.${mq}-${1}`: the grid item size
+* `.${mq}-grow`: the grid item size that grows to fit the available space
+* `.${mq}-shrink`: the grid item size that shrinks to fit the content size
 
 **Depends on the booleans set, [see config](#config)**
 
 `.-gap`: modifier class to set grid gap
 
-`.-fill`: modifier class to makes each cell equal height and it's content.
-Works great with cards.
+`.-fill`: modifier class to makes each cells content equal height.
+Works great with cards and other flexable componets.
 
 `.offset-${mq}-${i}`: set the cell offset, from left.
+
+`.cell` and `.offset` Chunks: allow you to create more complex flows.
+
+Example:
+
+```html
+<div class="flex-grid">
+    <div class="cell md-3-2">I am taking 2/3 of the space</div>
+    <div class="cell md-3">I am taking 1/3 of the space</div>
+</div>
+```
 
 ## Config
 
@@ -96,11 +99,12 @@ So many configs are disabled to load only what is needed.
 
 ### Booleans
 
-| Var                 | Default | Description                             |
-| ------------------- | ------- | --------------------------------------- |
-| $enable-flex-gap    | true    | Load the gap directly without gap class |
-| $enable-flex-fill   | false   | Enable the fill class                   |
-| $enable-flex-offset | false   | Enable the cell offset classes          |
+| Var                 | Default | Description                              |
+| ------------------- | ------- | ---------------------------------------- |
+| $enable-flex-gap    | true    | Load the gap directly without gap class  |
+| $enable-flex-fill   | false   | Enable the fill class                    |
+| $enable-flex-offset | false   | Enable the cell offset classes           |
+| $enable-flex-chunks | true    | Enable the cell and offset chunk classes |
 
 ### Setters
 
@@ -161,15 +165,3 @@ Flex-grid makes sense for flexable grids.
 Where you don't know the layout before hand.
 
 </details>
-
-<details><summary>Why release a flex-grid in 2019</summary>
-
-The Fylgja flex-grid was part of our private code base for a long time.
-
-_Even had a LESS version._
-
-With our near completion of Fylgja we also wanted to share this piece of history.
-That is is still very usable for many cases even in 2019.
-
-</details>
-

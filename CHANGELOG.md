@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.1 - (2020-01-26)
+* IMP: readme with latest release
+
 ## 2.1.0 - (2020-01-26)
 * ADD: chunks options to cell and offset, allowing 3-2 sizes.
   Note: this is enabled by default.
