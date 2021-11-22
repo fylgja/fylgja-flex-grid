@@ -106,18 +106,16 @@ so many configs are disabled to load only what is needed.
 
 ### Setters
 
-| Var              | Default                      | Description             |
-| ---------------- | ---------------------------- | ----------------------- |
-| $flex-grid-gaps  | ()                           | Additional gaps         |
-| $flex-grid-cells | xs 2, sm 3, md 3, lg 4, xl 5 | Amount of cells, per MQ |
-| $gap-size        | 1rem                         | The default gap size    |
+| Var              | Default                              | Description             |
+| ---------------- | ------------------------------------ | ----------------------- |
+| $flex-grid-gaps  | ()                                   | Additional gaps         |
+| $flex-grid-cells | xxs: 2, xs 3, sm 3, md 4, lg 4, xl 5 | Amount of cells, per MQ |
+| $gap-size        | 1rem                                 | The default gap size    |
 
 ### Breakpoints
 
-All breakpoints are set via the SCSS map `$breakpoints`.
-Each point is based on the Bootstrap naming.
-
-See the upcoming `@fylgja/core` module for more information.
+All breakpoints are set via the Fylgaj component helper `@fylgja/mq`,
+and can be changed from there or directly with `$flex-grid-breakpoints` map.
 
 ## Helper (mixins)
 
