@@ -3,15 +3,13 @@
   "version": "3.0.0",
   "description": "Create a fully fledged css grid with the power of flexbox",
   "homepage": "https://getfylgja.com/",
+  "repository": "https://github.com/fylgja/fylgja-flex-grid",
+  "bugs": "https://github.com/fylgja/fylgja-flex-grid/issues",
   "author": "Fylgja",
   "license": "MIT",
+  "main": "_index.scss",
+  "unpkg": "flex-grid.css",
   "style": "flex-grid.css",
-  "sass": "_index.scss",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fylgja/fylgja-flex-grid"
-  },
-  "bugs": "https://github.com/fylgja/fylgja-flex-grid/issues",
   "keywords": [
     "fylgja",
     "fylgja component",
