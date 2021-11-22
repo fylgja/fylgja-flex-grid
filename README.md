@@ -114,7 +114,7 @@ so many configs are disabled to load only what is needed.
 
 ### Breakpoints
 
-All breakpoints are set via the Fylgaj component helper `@fylgja/mq`,
+All breakpoints are set via the Fylgja component helper `@fylgja/mq`,
 and can be changed from there or directly with `$flex-grid-breakpoints` map.
 
 ## Helper (mixins)
