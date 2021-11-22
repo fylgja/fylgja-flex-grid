@@ -114,8 +114,11 @@ so many configs are disabled to load only what is needed.
 
 ### Breakpoints
 
-All breakpoints are set via the Fylgja component helper `@fylgja/mq`,
+All breakpoints are set via the Fylgja component helper [`@fylgja/mq`](https://fylgja.dev/components/mq/),
 and can be changed from there or directly with `$flex-grid-breakpoints` map.
+
+`xxs` is the version of the cell sizes and breakpoint'less version, this value is required in the map.,
+but the key name can be anything you want it to be.
 
 ## Helper (mixins)
 
