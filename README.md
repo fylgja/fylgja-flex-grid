@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/@fylgja/flex-grid.svg)](https://www.npmjs.org/package/@fylgja/flex-grid)
 
-> This one of our legacy grids following the more static column approuch used by many.
+> This our legacy grid following the more static column approach used by many.
 > 
 > We moved to a more flexible approach with the [Auto Grid](https://fylgja.dev/components/auto-grid/),
 > that follows a content based approach instead.
