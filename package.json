@@ -1,7 +1,7 @@
 {
   "name": "@fylgja/flex-grid",
   "version": "2.1.1",
-  "description": "Create a fully fledged css flex-grid",
+  "description": "Create a fully fledged css grid with the power of flexbox",
   "homepage": "https://getfylgja.com/",
   "author": "Fylgja",
   "license": "MIT",
@@ -15,9 +15,16 @@
   "keywords": [
     "fylgja",
     "fylgja component",
+    "grid",
     "flex-grid"
   ],
   "scripts": {
-    "build": "sass flex-grid.scss flex-grid.css --no-source-map -s compressed"
+    "build": "sass flex-grid.scss flex-grid.css --no-source-map -s compressed -I node_modules"
+  },
+  "dependencies": {
+    "@fylgja/mq": "^1.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
   }
 }
