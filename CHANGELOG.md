@@ -6,12 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2021-11-22
+### Changed
+- Swapped SCSS from `flex-grid.scss` with `_index.scss` to match the rest of Fylgja's components
+- Renamed `$breakpoints` to `$flex-grid-breakpoints`
+- breakpoints handled now by `@fylgja/mq`,
+  but still changeable trough the `$flex-grid-breakpoints`
+- breakpoints changed values;
+  - xs (0) is now xxs
+  - For the rest of the see breakpoints, see the [`@fylgja/mq` docs](https://fylgja.dev/components/mq/)
+- Upgrade SCSS syntax to newer syntax, requires Dart Sass 1.33.0 or higher.
+
 ## [2.1.1] - 2020-01-26
 ### Changed
 - IMP: readme with latest release
 
 ## [2.1.0] - 2020-01-26
-### Added 
+### Added
 - Chunks options to cell and offset, allowing 3-2 sizes, Note: this is enabled by default.
 
 ### Changed
