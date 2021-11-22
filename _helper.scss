@@ -37,7 +37,7 @@ $flex-grid-cells: (
 @mixin flex-grid-mq($mq, $map: $flex-grid-breakpoints) {
     $mq-value: map.get($map, $mq);
     @if ($mq-value != 0) {
-        @media (min-width: $mq-value) {
+        @media ($mq-value) {
             @content;
         }
     } @else {
