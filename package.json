@@ -17,6 +17,7 @@
     "flex-grid"
   ],
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass flex-grid.scss flex-grid.css --no-source-map -s compressed -I node_modules"
   },
   "dependencies": {
