@@ -4,7 +4,7 @@
 
 > This one of our legacy grids following the more static column approuch used by many.
 > 
-> We moved to a more flexible approach with the [Auto Grid](/components/auto-grid/),
+> We moved to a more flexible approach with the [Auto Grid](https://fylgja.dev/components/auto-grid/),
 > that follows a content based approach instead.
 > 
 > The Flex Grid did get an upgrade in version 3,
